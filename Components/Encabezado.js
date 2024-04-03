@@ -1,10 +1,17 @@
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, StyleSheet} from 'react-native';
 
-function Encabezado({title}){
+function Encabezado({title, style}){
     return(
-        <Text>{title}</Text>
+        <Text style={[styles.text, style]}>{title}</Text>
     );
-
 }
+
+const styles = StyleSheet.create({
+    text: {
+        fontSize: 32,
+        padding: 20,
+    },
+});
+
 export default Encabezado;

@@ -9,7 +9,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Encabezado title={"Centro De Busquedas Global Intermitentes"} />
+      <Encabezado title={"Centro De Busquedas Global Intermitentes"} style={styles.head} />
       <Buscador title={"Ingresa una busqueda"} style={styles.input} />
       <Button
         title="Buscar"
@@ -28,9 +28,14 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
+    width: 800,
     margin: 15,
     borderWidth: 2,
-    fontSize: "24px",
+    fontSize: 24,
+    padding: 20,
+  },
+  head: {
+    fontSize: 32, 
     padding: 20,
   },
 });
