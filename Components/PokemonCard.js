@@ -26,13 +26,13 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: 200,
+    height: 250,
   },
   cardBody: {
     padding: 10,
   },
   title: {
-    fontSize: 18,
+    fontSize: 24,
     fontWeight: 'bold',
   },
   text: {

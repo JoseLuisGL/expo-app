@@ -74,11 +74,12 @@ const styles = StyleSheet.create({
   button: {
     height: 50,
     width: 100,
-    backgroundColor: "black",
+    fontSize: "black",
   },
   cardContainer: {
     flex: 1,
     width: "100%",
-    paddingVertical: 20,
+    padding: 50,
+    paddingVertical: 30,
   },
 });
