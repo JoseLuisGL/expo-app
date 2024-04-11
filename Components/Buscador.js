@@ -1,18 +1,20 @@
 import React from 'react';
-import {TextInput, StyleSheet} from 'react-native';
+import { TextInput } from 'react-native';
 
-function Buscador({title, style}){
-    const [number, onChangeNumber] = React.useState('');
+function Buscador({ title, style }) {
+    const [inputText, setInputText] = React.useState('');
 
-    return(
+    const handleChangeText = (text) => {
+        setInputText(text);
+    };
+
+    return (
         <TextInput
-        style={style}
-        onChangeText={onChangeNumber}
-        value={number}
-        placeholder={title}
-        keyboardType="numeric"
-      />
-      
+            style={style}
+            onChangeText={handleChangeText}
+            value={inputText}
+            placeholder={title}
+        />
     );
 }
 
